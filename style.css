@@ -1,7 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@font-face {
+    font-family: "Quicksand";
+    src: url('./fonts/Quicksand/Quicksand-Light.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Quicksand";
+    src: url('./fonts/Quicksand/Quicksand-Medium.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url('./fonts/Roboto/Roboto-Light.woff2 format') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url('./fonts/Roboto/Roboto-Medium.woff2 format') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
+:root {
+    --color-white: #FFFFFF;
+    --color-dark-gray-blue: #8D96BD;
+    --color-dark-blue: #3D4F9F;
+    --color-light: #DFE2EF;
+
+    --border-radius: 2px;
+    --border-radius-form: 5px;
+    --font-family-base: "Quicksand", sans-serif;
+    --font-family-accent: "Roboto", sans-serif;
+    --height-buttons: 43px;
+
+
+    --transiton-duration: 0.2s;
+}
 
 *,
 ::after,
@@ -24,7 +65,51 @@
     overflow: hidden;
 }
 
+body {
+    background-color: var(--color-white);
+    font-family: var(--font-family-base);
+    color: var(--color-dark-gray-blue-blue);
+    font-size: 15px;
+}
 
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: var(--color-dark-blue);
+    font-family: var(--font-family-base);
+}
+
+h5 {
+    color: var(--color-dark-blue);
+    font-family: var(--font-family-base);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.page-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+    padding-inline: 117px;
+}
+
+.navigation-list {
+    display: flex;
+    list-style-type: none;
+    column-gap: 42px;
+}
+
+.navigation-user-list {
+    display: flex;
+    list-style-type: none;
+    column-gap: 35px;
+}
+
+.navigation {
+    display: flex;
+    
+}
 
 
 /* HERO */
