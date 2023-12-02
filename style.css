@@ -119,6 +119,7 @@ h5 {
 .navigation-link {
     text-decoration: none;
     font-weight: 700;
+    color: var(--color-dark-gray-blue);
 }
 
 .active-navigation-link {
@@ -234,12 +235,17 @@ h5 {
     max-width: 413px;
 }
 
-.plan-manage-text h5 {
+.plan-manage-wrapper-text {
     margin-top: 27px;
 }
 
 .plan-manage-wrapper-text h2 {
     font-size: 36px;
+}
+
+.img-plan-manage {
+    box-shadow: 2px 5px 15px;
+    border-radius: 20px;
 }
 
 .text-plan-manage {
@@ -251,7 +257,6 @@ h5 {
     font-weight: normal;
 }
 
-.
 
 .plan-manage-buttons-wrapper {
     display: inline-block;
@@ -269,6 +274,7 @@ h5 {
     font-style: normal;
     font-weight: 700;
     cursor: pointer;
+    border-radius: var(--border-radius);
 }
 
 .no-border-btn-plan-manage {
@@ -285,4 +291,46 @@ h5 {
     background-image: url('./icons/icon-plan-manage-button.svg');
     background-repeat: no-repeat;
     margin-left: 6px;
+}
+
+
+/* FEATURES */
+
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(4, 140px);
+    grid-template-rows: auto;
+    list-style-type: none;
+}
+
+.features-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 33px;
+}
+
+.features-text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+}
+
+.features-text-title {
+    color: var(--button-color-blue);
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.features-text-subtitle {
+    font-weight: 600;
+    font-size: 12px;
+    color: #ADB3CB;
+}
+
+.features-wrapper-content {
+    max-width: 761px;
+    margin: 0 auto;
 }
