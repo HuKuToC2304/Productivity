@@ -41,6 +41,7 @@
     --font-family-accent: "Roboto", sans-serif;
     --height-buttons: 43px;
 
+    --button-border: 1px solid #D1D1E4;
     --button-color-blue: #4C85FF;
     --button-color-alternative: #D2E1FF;
     --button-padding: 13px 16px;
@@ -74,7 +75,7 @@
 body {
     background-color: var(--color-white);
     font-family: var(--font-family-base);
-    color: var(--color-dark-gray-blue-blue);
+    color: var(--color-dark-gray-blue);
     font-size: 15px;
 }
 
@@ -222,25 +223,66 @@ h5 {
 
 .plan-manage-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 150px 0;
 }
 
 .plan-manage-text {
     max-width: 413px;
 }
 
+.plan-manage-text h5 {
+    margin-top: 27px;
+}
+
 .plan-manage-wrapper-text h2 {
     font-size: 36px;
-    
+}
+
+.text-plan-manage {
+    margin-top: 27px;
+    margin-bottom: 47px;
 }
 
 .plan-manage-wrapper-text h2 span {
     font-weight: normal;
 }
 
+.
+
+.plan-manage-buttons-wrapper {
+    display: inline-block;
+}
 
 .plan-manage-btn {
     background-color: var(--button-color-blue);
-    border: none
+    display: inline-block;
+    border: none;
+    height: var(--height-buttons);
+    padding-inline: 25px;
+    color: var(--color-white);
+    font-family: Quicksand;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    cursor: pointer;
+}
 
+.no-border-btn-plan-manage {
+    background-color: inherit;
+    color: #ADB4D2;
+    border: var(--button-border);
+}
+
+.plan-manage-btn-icon::after {
+    content: "";
+    display: inline-block;
+    width: 6.5px;
+    height: 7px;
+    background-image: url('./icons/icon-plan-manage-button.svg');
+    background-repeat: no-repeat;
+    margin-left: 6px;
 }
