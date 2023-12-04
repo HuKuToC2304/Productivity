@@ -407,3 +407,48 @@ h5 {
     font-weight: 600;
 }
 
+
+/* STATS */
+
+.stats-block-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.stats-block-item {
+    padding: 66px 90px 66px;
+}
+
+.inner-wrapper-block-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 260px;
+}
+
+.blue-stats-block {
+    background-color: var(--button-color-blue);
+    color: var(--color-white);
+    display: flex;
+    justify-content: end;
+    text-align: end;
+    padding: 66px 90px;
+}
+
+.light-blue-stats-block {
+    background-color: var(--color-light-blue-alternative);
+    color: var(--button-color-blue);
+}
+
+
+.stats-title {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.stats-subtitle {
+    font-family: var(--font-family-accent);
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    font-weight: 500;
+}
