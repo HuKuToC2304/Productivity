@@ -150,8 +150,7 @@ h5 {
     background-color: var(--color-light-blue-alternative);
     background-image: url('./images/index-images/background-hero-img.png');
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .hero-wrapper {
@@ -296,11 +295,18 @@ h5 {
 
 /* FEATURES */
 
+.features {
+    background-image: url("./images/index-images/clouds-features.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .features-list {
     display: grid;
     grid-template-columns: repeat(4, 140px);
     grid-template-rows: auto;
     list-style-type: none;
+    column-gap: 68px;
 }
 
 .features-list-item {
@@ -309,6 +315,17 @@ h5 {
     align-items: center;
     text-align: center;
     gap: 33px;
+    position: relative;
+}
+
+.features-list-item:not(:first-child)::before {
+    content: "";
+    width: 28px;
+    height: 1px;
+    position: absolute;
+    background-color: #DAE4FE;
+    top: 60%;
+    left: -34%;
 }
 
 .features-text {
@@ -331,6 +348,62 @@ h5 {
 }
 
 .features-wrapper-content {
+    display: flex;
+    flex-direction: column;
     max-width: 761px;
     margin: 0 auto;
+    gap: 92px;
+    text-align: center;
+    padding: 171px 0;
 }
+
+
+
+.features-button span::before {
+    content: "";
+    width: 15px;
+    height: 2px;
+    position: absolute;
+    background-color: #DAE4FE;
+    top: 50%;
+    right: 30px;
+}
+.features-button span::after {
+    content: "";
+    width: 15px;
+    height: 2px;
+    position: absolute;
+    background-color: #DAE4FE;
+    top: 50%;
+    left: 30px;
+}
+
+.features-read-more-btn {
+    padding: 13px 16px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+.red-btn-features {
+    background-color: #FFD7D7;
+    color: #D43F3F;
+    font-weight: 700;
+    margin-right: 32px;
+}
+
+.blue-btn-features {
+    background-color: #D2E1FF;
+    color: #3A79FF;
+    font-weight: 700;
+    margin-left: 32px;
+}
+
+.features-button span {
+    position: relative;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+
