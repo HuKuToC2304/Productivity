@@ -751,6 +751,10 @@ h5 {
 
 /* NEWSLETTER */
 
+.newsletter {
+    background-color: #FCFDFF;
+}
+
 .newsletter-content {
     display: flex;
     align-items: center;
@@ -789,6 +793,7 @@ h5 {
     background-color: var(--button-color-blue);
     color: var(--color-white);
     font-size: 13px;
+    cursor: pointer;
 }
 
 .news-letter-title {
@@ -802,4 +807,49 @@ h5 {
 .news-letter-subtitle {
     line-height: 191.016%;
     letter-spacing: 0.42px;
+}
+
+
+/* PAGE-FOOTER */
+
+.page-footer {
+    border-top: 1px solid #D8E3FE;
+    padding: 93px 0;
+}
+
+.page-footer-navigation-wrapper {
+   display: flex;
+   align-items: center;
+   max-width: 1206px;
+   margin: 0 auto;
+   justify-content: space-between;
+}
+
+.footer-navigation {
+    display: flex;
+    padding-inline: 73px 44px;
+    gap: 390px;
+   
+}
+
+.footer-navigation-list {
+    display: flex;
+    list-style-type: none;
+    gap: 42px;
+}
+
+.footer-navigation-user-list {
+    display: flex;
+    list-style-type: none;
+    gap: 35px;
+}
+
+.navigation-user-wrapper,
+.navigation-list-wrapper {
+    display: flex;
+}
+
+.copyright {
+    margin-left: 229px;
+    margin-top: 42px;
 }
